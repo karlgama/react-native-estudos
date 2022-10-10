@@ -3,10 +3,10 @@ import { Image, StyleSheet, Dimensions } from 'react-native'
 import Texto from '../../../componentes/Texto'
 import topo from '../../../../assets/topo.png'
 
-export default function Topo() {
+export default function Topo({ titulo }) {
     return <>
         <Image style={estilos.topo} source={topo} />
-        <Texto style={estilos.titulo}>Detalhes da cesta</Texto>
+        <Texto style={estilos.titulo}>{titulo}</Texto>
     </>
 
 }
